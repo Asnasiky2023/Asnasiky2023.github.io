@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>MI PRIMER SITIO WEB</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+
+
+<body>
+
+	
+<header class="cabecera">
+	<img src="logo_rayuela.png" alt="cabecera">
+	<h1>RAYUELA LIBROS & CAFE</h1>
+	<h3>El conocimiento es poder</h3>
+</header>
+
+
+<nav class="menu">
+	<ul>
+		<li><a href="index.html">INICIO</a></li>
+		<li><a href="libros.html">LIBROS</a></li>
+		<li><a href="fotos.html">FOTOS</a></li>
+		<li><a href="nosotros.html">NOSOTROS</a></li>
+		<li><a href="contactos.html">CONTACTOS</a></li>
+	</ul>
+</nav>
+<hr>
+
+	
+<section class="cuerpo">
+	<img class="slider" src="cabecera.jpg" alt="Rayuela Libros & Cafe">
+	
+	<article class="iconos">
+		<h3>SERVICIOS</h3>
+		<div>
+			<img src="icono-1.png" alt="icono-1">		
+			<p>Alquiler</p>
+		</div>
+		<div>
+			<img src="icono-2.png" alt="icono-2">		
+			<p>Prestamo</p>
+		</div>
+		<div>
+			<img src="icono-3.png" alt="icono-3">		
+			<p>Envios al Interior</p>
+		</div>
+		<div>
+			<img src="icono-4.png" alt="icono-4">		
+			<p>Ventas</p>
+		</div>
+		
+	</article>
+	
+	<article class="bienvenida">
+		<p>”Rayuela Libros & Café" es una librería y café que se encuentra en la Ciudad de La Rioja - Argentina. Ofrecen una selección de libros en varios géneros y también brindan un espacio acogedor donde los clientes pueden disfrutar de café y otros productos mientras leen</p>
+	</article>
+	
+<br>
+<hr>
+ 	<h1>Contacto</h1>
+ 	<br>
+
+ 	<form id="contactForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" width="30"> <br><br> <!-- Aquí se ajustó el atributo size a 30 -->
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" size="10"><br><br> <!-- Ajustado también a size="10" -->
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="20"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+
+<br>
+<hr>
+
+    <div id="respuesta"></div>
+
+    <script>
+        // JavaScript para manejar el formulario
+    window.addEventListener("load", function() {
+        var form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Aquí simulamos un envío exitoso:
+            setTimeout(function() {
+                alert("Mensaje enviado con éxito");
+                form.reset(); // Limpia el formulario después de mostrar el mensaje
+            }, 3000); // Mostrar el mensaje durante 3 segundos (ajusta el tiempo según lo necesario)
+        });
+    });
+    </script>
+	
+
+	</body>
+</html>
+
+	
+	<article class="publicidad">
+		<img src="portada.jpg" alt="">
+	</article>
+			
+</section>
+	<h3>Dirección: San Nicolás de Bari (O) 667, La Rioja, Argentina, 5300</h3>
+
+	<h3>Telefono: 0380 460-3907</h3>
+
+<hr>
+
+<footer class="piedepagina">
+	<p>Derechos Reservados (c) 2017 - Rayuela Libros & Café</p>
+</footer>
+		
+</body>
+</html>
